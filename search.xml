@@ -8,7 +8,7 @@
       <link href="/2023/06/29/dwm%E4%B8%8Bwechat%E7%9A%84%E5%AE%89%E8%A3%85/"/>
       <url>/2023/06/29/dwm%E4%B8%8Bwechat%E7%9A%84%E5%AE%89%E8%A3%85/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h3 id="相关软件安装"><a href="#相关软件安装" class="headerlink" title="相关软件安装"></a>相关软件安装</h3><p>下载这个版本的包<a href="https://github.com/vufa/deepin-wine-wechat-arch/releases/download/v3.8.1.26-1/deepin-wine-wechat-3.8.1.26-1-x86_64.pkg.tar.zst">https://github.com/vufa/deepin-wine-wechat-arch/releases/download/v3.8.1.26-1/deepin-wine-wechat-3.8.1.26-1-x86_64.pkg.tar.zst</a></p><p>执行以下命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ yay -S deepin-wine5</span><br><span class="line">$ yay -S wqy-microhei</span><br><span class="line">$ sudo pacman -U deepin-wine-wechat-3.8.1.26-1-x86_64.pkg.tar.zst</span><br></pre></td></tr></table></figure><h3 id="修改脚本文件"><a href="#修改脚本文件" class="headerlink" title="修改脚本文件"></a>修改脚本文件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo nvim /opt/apps/com.qq.weixin.deepin/files/run.sh</span><br></pre></td></tr></table></figure><p>手动把<code>export APPRUN_CMD=&quot;deepin-wine6-stable&quot;</code>改成<code>export APPRUN_CMD=&quot;deepin-wine5</code></p><p>启动命令<code>/opt/apps/com.qq.weixin.deepin/files/run.sh</code></p>]]></content>
       
       
       <categories>
@@ -101,22 +101,22 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title></title>
+      <link href="/css/custom.css"/>
+      <url>/css/custom.css</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {  background: transparent !important;}#page-header {  background: transparent !important;}/* 白天模式遮罩透明 */#footer::before {  background: transparent !important;}#page-header::before {  background: transparent !important;}/* 夜间模式遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 小冰分类分类磁铁黑夜模式适配 *//* 一般状态 */[data-theme="dark"] .magnet_link_context {  background: #1e1e1e;  color: antiquewhite;}/* 鼠标悬浮状态 */[data-theme="dark"] .magnet_link_context:hover {  background: #3ecdf1;  color: #f2f2f2;}]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title></title>
-      <link href="/css/custom.css"/>
-      <url>/css/custom.css</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {  background: transparent !important;}#page-header {  background: transparent !important;}/* 白天模式遮罩透明 */#footer::before {  background: transparent !important;}#page-header::before {  background: transparent !important;}/* 夜间模式遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 小冰分类分类磁铁黑夜模式适配 *//* 一般状态 */[data-theme="dark"] .magnet_link_context {  background: #1e1e1e;  color: antiquewhite;}/* 鼠标悬浮状态 */[data-theme="dark"] .magnet_link_context:hover {  background: #3ecdf1;  color: #f2f2f2;}]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
